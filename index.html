@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device.width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="robots" content="">
+		<meta name="author" content="">
+
+		<link rel="stylesheet" type="text/css" href="css/Style.css">
+
+		<link rel="stylesheet" type="text/css" href="">
+		<link rel="icon" href="imgs/logo.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<a href="index.html"><h1>AHNEP</h1></a>
+			<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+		</header>
+		<div class="menu">
+			<a class="btn-close"><i class="fa fa-times"></i> </a>
+			<ul>
+				<li><a href="https://www.google.com.br">Google</a></li>
+				<li><a href="#">Pag2</a></li>
+				<li><a href="#">Pag3</a></li>
+				<li><a href="#">Pag4</a></li>
+				<li><a href="#">Pag5</a></li>
+			</ul>
+		</div>
+
+
+		<div class="banner">
+
+		</div>
+
+		<div class="mainpainel">
+			<!-- Painel1 é o primeiro painel a esquerda -->
+			<!-- Painel2 é o segundo painel a esquerda -->
+			<!-- Painel3 é o painel da direita da tela! -->
+
+			<div class="painel3 painel">
+				<h3>PREMIAÇÕES</h3>
+			</div>
+
+			<div class="painel1 painel">
+				<h3>BUSCAR CURSOS</h3>
+				<div class="box1">
+					<select>
+						<option> Opção 1 </option>
+						<option> Opção 2 </option>
+						<option> Opção 3 </option>
+						<option> Opção 4 </option>
+						<option> Opção 5 </option>
+						<option> Opção 6 </option>
+					</select>
+				</div>
+
+			</div>
+			<div class="painel2 painel">
+				<h3>EVENTOS</h3>
+				<img src="">
+			</div>
+			
+		</div>
+		<br>
+		<footer>
+			<p>
+				Cpy
+			</p>
+		</footer>
+
+		<form class="form" method="post" action="php/email.php">
+			<input type="text" name="nNome" id="Cname" placeholder="Nome">
+			<input type="email" name="nEmail" id="cEmail" placeholder="Coloque seu e-mail">
+			<input type="submit" value="Enviar!">
+		</form>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script>
+			$(".btn-menu").click(function(){
+				$(".menu").show();
+			});
+			$(".btn-close").click(function(){
+				$(".menu").hide();
+			});
+		</script>
+	</body>
+</html>
